@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<garnish>
+	<ingredients>
+		<dataset name="jquery_nivo_slider" name_friendly="Nivo Slider">
+			<fields>
+				<images name="image" name_friendly="Slide Image" required="1" list="1" />
+				<text name="title" name_friendly="Slide Title" list="1" />
+				<textarea name="description" name_friendly="Description" />
+				<internal_link name="link" name_friendly="Link URL" />
+				<sort name="sort" name_friendly="Sort Order" required="1" list="1" sort_table="1" />
+			</fields>
+			
+			<items>
+				<item>
+					<image><![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-photo-by-adrian-drebler.jpg]]></image>
+					<title><![CDATA[A Zesty Slider]]></title>
+					<description>
+						<![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci ligula, pellentesque a dictum ac, elementum at erat.]]>
+					</description>
+					<link><![CDATA[501]]></link>
+					<sort><![CDATA[1]]></sort>
+				</item>
+				<item>
+					<image><![CDATA[https://be93523bd41e2e475e74-e4edef19ad51123442eaceed55c78461.ssl.cf2.rackcdn.com/or-cannibal-tree-by-jan-tik.jpg]]></image>
+					<title><![CDATA[Add an Image!]]></title>
+					<description>
+						<![CDATA[Cras ipsum lectus, rutrum vitae blandit eget, ultricies nec ante. Vestibulum eget tortor velit, a sagittis lacus. Suspendisse sed metus arcu.]]>
+					</description>
+					<link><![CDATA[501]]></link>
+					<sort><![CDATA[2]]></sort>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+	<settings>
+		<dropdown name="effect" name_friendly="Slide Effect" options="random:Random;fold:Fold;fade:Fade;sliceDown:Slice Down"><![CDATA[random]]></dropdown>
+		<number name="slices" name_friendly="Number of Slide Slices"><![CDATA[15]]></number>
+		<dropdown name="animation_speed" name_friendly="Transition Between Slides Speed" options="100:One tenth of a second;200:One fifth of a second;500:Half a second;1000:1 second">
+			<![CDATA[500]]>
+		</dropdown>
+		<text name="pause_time" name_friendly="Display Slide Duration (in milliseconds)"><![CDATA[3000]]></text>
+	</settings>
+</garnish>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<garnish>
+	<ingredients>
+		<dataset name="social_links" name_friendly="Awesome Social Links">
+			<fields>
+				<text name="link" name_friendly="Link URL" required="1" list="1" />
+				<dropdown name="link_type" name_friendly="Link Type" list="1">
+					<options><![CDATA[icon-facebook:<i class='icon-facebook'></i> Facebook;icon-facebook-sign:<i class='icon-facebook-sign'></i> Facebook;icon-twitter:<i class='icon-twitter'></i> Twitter;icon-twitter-sign:<i class='icon-twitter-sign'></i> Twitter;icon-instagram:<i class='icon-instagram'></i> Instagram;icon-google-plus:<i class='icon-google-plus'></i> Google+;icon-google-plus-sign:<i class='icon-google-plus-sign'></i> Google+;icon-linkedin:<i class='icon-linkedin'></i> LinkedIn;icon-linkedin-sign:<i class='icon-linkedin-sign'></i> LinkedIn;icon-rss:<i class='icon-rss'></i> RSS Feed;icon-rss:<i class='icon-rss-sign'></i> RSS Feed;icon-pinterest:<i class='icon-pinterest'></i> Pinterest;icon-pinterest-sign:<i class='icon-pinterest-sign'></i> Pinterest;icon-youtube:<i class='icon-youtube'></i> YouTube;icon-youtube-sign:<i class='icon-youtube-sign'></i> YouTube;icon-download:<i class='icon-download'></i> Download;icon-github:<i class='icon-github'></i> Github;icon-github-sign:<i class='icon-github-sign'></i> Github;icon-apple:<i class='icon-apple'></i> Apple;icon-windows:<i class='icon-windows'></i> Windows;icon-android:<i class='icon-android'></i> Android;icon-skype:<i class='icon-skype'></i> Skype;icon-tumblr:<i class='icon-tumblr'></i> Tumblr;icon-tumblr-sign:<i class='icon-tumblr-sign'></i> Tumblr;icon-dribbble:<i class='icon-dribbble'></i> Dribbble;icon-bitcoin:<i class='icon-bitcoin'></i> Bitcoin;icon-xing:<i class='icon-xing'></i> Xing;icon-xing-sign:<i class='icon-xing-sign'></i> Xing;icon-dropbox:<i class='icon-dropbox'></i> Dropbox;icon-file:<i class='icon-file'></i> File;icon-save:<i class='icon-save'></i> Save;icon-thumbs-up:<i class='icon-thumbs-up'></i> Thumbs Up;icon-smile:<i class='icon-smile'></i> Smiley Face;icon-phone-sign:<i class='icon-phone-sign'></i> Phone;icon-envelope:<i class='icon-envelope'></i> Mail/Email;icon-comments:<i class='icon-comments'></i> Comments;icon-cloud:<i class='icon-cloud'></i> Cloud;icon-camera-retro:<i class='icon-camera-retro'></i> Camera;icon-sign-blank:<i class='icon-sign-blank'></i> Blank Sign;icon-trophy:<i class='icon-trophy'></i> Trophy;icon-tags:<i class='icon-tags'></i> Tags;icon-ticket:<i class='icon-ticket'></i> Ticket;icon-volume-up:<i class='icon-volume-up'></i> Volume Up;icon-qrcode:<i class='icon-qrcode'></i> QR Code;icon-star:<i class='icon-star'></i> Star;icon-calendar:<i class='icon-calendar'></i> Calendar;icon-film:<i class='icon-film'></i> Film;icon-bookmark:<i class='icon-bookmark'></i> Bookmark;icon-map-marker:<i class='icon-map-marker'></i> Map Marker/Location;icon-fighter-jet:<i class='icon-fighter-jet'></i> Fighter Jet;]]></options>
+				</dropdown>
+				<sort name="sort" name_friendly="Sort Order" sort_table="1" list="1" />
+			</fields>
+			<items>
+				<item>
+					<link><![CDATA[http://facebook.com/]]></link>
+					<link_type><![CDATA[icon-facebook]]></link_type>
+					<sort>1</sort>
+				</item>
+				<item>
+					<link><![CDATA[http://twitter.com/]]></link>
+					<link_type><![CDATA[icon-twitter]]></link_type>
+					<sort>2</sort>
+				</item>
+				<item>
+					<link><![CDATA[http://plus.google.com/]]></link>
+					<link_type><![CDATA[icon-google-plus]]></link_type>
+					<sort>3</sort>
+				</item>
+				<item>
+					<link><![CDATA[http://linkedin.com/]]></link>
+					<link_type><![CDATA[icon-linkedin]]></link_type>
+					<sort>4</sort>
+				</item>
+				<item>
+					<link><![CDATA[/feed.xml]]></link>
+					<link_type><![CDATA[icon-rss]]></link_type>
+					<sort>5</sort>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+	<settings>
+		<dropdown name="colored" name_friendly="Use colored version of icons?" options="color:Yes, colored;no-color:No, default color"><![CDATA[no-color]]></dropdown>
+		<dropdown name="size" name_friendly="Size of icons" options="s16:16px (smallest);s24:24px (medium sized);s32:32px;s48:48px;s64:64px;s72:72px"><![CDATA[s24]]></dropdown>
+		<dropdown name="direction" name_friendly="Direction to display" options="horizontal:Horizontal;vertical:Vertical"><![CDATA[horizontal]]></dropdown>
+	</settings>
+</garnish>

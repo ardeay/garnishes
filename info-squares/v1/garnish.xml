@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<garnish>
+	<ingredients>
+		<dataset name="info_squares" name_friendly="Squares" >
+			<fields>
+				<text name="title" list="1" name_friendly="Title" required="1" />
+				<textarea name="description" name_friendly="Description" />
+				<images name="image" name_friendly="Image" />
+				<text name="action_title" name_friendly="Action Title" />
+				<internal_link name="url" name_friendly="Link" />
+				<sort name="sort" name_friendly="Sort Order" list="1" />
+			</fields>
+			
+			<items>
+				<item>
+					<title><![CDATA[Square Details 1]]></title>
+					<description>
+						<![CDATA[Vestibulum id ligula porta felis euismod semper. ali d dolor id nibh ultircles vehicula ut id elit. Nulla vitae libero, a phara]]>
+					</description>
+					<image><![CDATA[http://placehold.it/280x180]]></image>
+					<action_title><![CDATA[Learn More]]></action_title>
+					<url><![CDATA[501]]></url>
+					<sort><![CDATA[1]]></sort>
+				</item>
+				<item>
+					<title><![CDATA[Square Details 2]]></title>
+					<description>
+						<![CDATA[Vestibulum id ligula porta felis euismod semper. ali d dolor id nibh ultircles vehicula ut id elit. Nulla vitae libero, a phara]]>
+					</description>
+					<image><![CDATA[http://placehold.it/280x180]]></image>
+					<action_title><![CDATA[Check it out]]></action_title>
+					<url><![CDATA[501]]></url>
+					<sort><![CDATA[2]]></sort>
+				</item>
+				<item>
+					<title><![CDATA[Square Details 3]]></title>
+					<description>
+						<![CDATA[Vestibulum id ligula porta felis euismod semper. ali d dolor id nibh ultircles vehicula ut id elit. Nulla vitae libero, a phara]]>
+					</description>
+					<image><![CDATA[http://placehold.it/280x180]]></image>
+					<action_title><![CDATA[View]]></action_title>
+					<url><![CDATA[501]]></url>
+					<sort><![CDATA[3]]></sort>
+				</item>
+			</items>
+		</dataset>	
+	</ingredients>
+	<settings>
+		<number name="display" name_friendly="Number of Squares to Display"><![CDATA[3]]></number>
+		<dropdown name="divisions" name_friendly="Number of Squares per Row" options="1:1;2:2;3:3;4:4;5:5;6:6"><![CDATA[3]]></dropdown>
+	</settings>
+</garnish>

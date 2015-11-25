@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<garnish>
+	<ingredients>
+		<dataset name="sharethis_buttons" name_friendly="ShareThis Buttons">
+			<fields>
+				<dropdown name="button" name_friendly="Button" options="st_facebook:Facebook;st_twitter:Twitter;st_linkedin:LinkedIn;st_pinterest:Pinterest;st_evernote:Evernote;st_tumblr:Tumblr;st_stumbleupon:StumbleUpon;st_reddit:Reddit;st_email_large:Email" list="1" />
+				<text name="text" name_friendly="Optional Text" list="1" />
+				<sort name="sort" name_friendly="Sort Order" sort_table="1" list="1" />
+			</fields>
+			<items>
+				<item>
+					<button><![CDATA[st_twitter]]></button>
+					<text><![CDATA[Tweet]]></text>
+					<sort>1</sort>
+				</item>
+				<item>
+					<button><![CDATA[st_facebook]]></button>
+					<text><![CDATA[Share]]></text>
+					<sort>2</sort>
+				</item>
+				<item>
+					<button><![CDATA[st_linkedin]]></button>
+					<text><![CDATA[LinkedIn]]></text>
+					<sort>3</sort>
+				</item>
+				<item>
+					<button><![CDATA[st_pinterest]]></button>
+					<text><![CDATA[Pin This]]></text>
+					<sort>4</sort>
+				</item>
+				<item>
+					<button><![CDATA[st_evernote]]></button>
+					<text><![CDATA[Add Note]]></text>
+					<sort>5</sort>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+	<settings>
+		<text name="publisher_id" name_friendly="ShareThis Publisher Key"></text>
+	</settings>
+</garnish>

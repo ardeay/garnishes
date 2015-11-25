@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<garnish>
+	<settings>
+		<text name="thank_you_text" name_friendly="Thank you text"><![CDATA[Thank you!]]></text>
+		<text name="form_title" name_friendly="Contact form title"><![CDATA[Sign up for our newsletter]]></text>
+		<text name="submit_title" name_friendly="Submit Button Text"><![CDATA[Sign up]]></text>
+		<dropdown name="use_recaptcha" name_friendly="Use recaptcha to validate user?" options="0:No;1:Yes"><![CDATA[0]]></dropdown>
+		<text name="recaptcha_public" name_friendly="Recaptcha Public Key"></text>
+		<text name="recaptcha_private" name_friendly="Recaptcha Private Key"></text>
+	</settings>
+	<ingredients>
+		<dataset name="sidebar_contact_form" name_friendly="Sidebar Contact Form">
+			<fields>
+				<text name="label" name_friendly="Label Text" required="1" list="1" />
+				<dropdown name="input_type" name_friendly="Input Type" options="text:Text Field;textarea:Text Area" list="1" />
+				<dropdown name="is_required" name_friendly="Field is required" options="required:Yes, required;optional:No, optional" list="1" />
+				<sort name="sort" name_friendly="Sort" list="1" sort_table="1" />
+			</fields>
+			
+			<items>
+				<item>
+					<label><![CDATA[Full Name]]></label>
+					<input_type><![CDATA[text]]></input_type>
+					<is_required><![CDATA[required]]></is_required>
+					<sort><![CDATA[1]]></sort>
+				</item>
+				<item>
+					<label><![CDATA[Email]]></label>
+					<input_type><![CDATA[text]]></input_type>
+					<is_required><![CDATA[required]]></is_required>
+					<sort><![CDATA[2]]></sort>
+				</item>
+				<item>
+					<label><![CDATA[Phone]]></label>
+					<input_type><![CDATA[text]]></input_type>
+					<is_required><![CDATA[optional]]></is_required>
+					<sort><![CDATA[3]]></sort>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+</garnish>

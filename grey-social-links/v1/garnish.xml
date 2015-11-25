@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone='yes'?>
+<garnish>
+	<ingredients>
+		<dataset name="social_links" name_friendly="Social Links">
+			<fields>
+				<text name="link" name_friendly="Link URL" required="1" list="1" />
+				<dropdown name="link_type" name_friendly="Link Type" options="facebook:Facebook;twitter:Twitter;instagram:Instagram;google-plus:Google+;linkedin:LinkedIn;rss_feed:RSS Feed;myspace:MySpace;vimeo:Vimeo;soundcloud:SoundCloud;pinterest:Pinterest;you-tube:YouTube;apple-store:Apple App Store;amazon-store:Amazon Store;download:Download" list="1" />
+				<sort name="sort" name_friendly="Sort Order" sort_table="1" list="1" />
+			</fields>
+			<items>
+				<item>
+					<link><![CDATA[http://facebook.com/]]></link>
+					<link_type><![CDATA[facebook]]></link_type>
+					<sort>1</sort>
+				</item>
+				<item>
+					<link><![CDATA[http://twitter.com/]]></link>
+					<link_type><![CDATA[twitter]]></link_type>
+					<sort>2</sort>
+				</item>
+				<item>
+					<link><![CDATA[http://plus.google.com/]]></link>
+					<link_type><![CDATA[google-plus]]></link_type>
+					<sort>3</sort>
+				</item>
+				<item>
+					<link><![CDATA[http://linkedin.com/]]></link>
+					<link_type><![CDATA[linkedin]]></link_type>
+					<sort>4</sort>
+				</item>
+				<item>
+					<link><![CDATA[/feed.xml]]></link>
+					<link_type><![CDATA[rss-feed]]></link_type>
+					<sort>5</sort>
+				</item>
+			</items>
+		</dataset>
+	</ingredients>
+</garnish>
